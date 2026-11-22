@@ -1,0 +1,19 @@
+---
+import Logo from "../components/Logo.astro";
+import Nav from "../components/Nav.astro";
+import "../styles/header.css";
+
+const {titulo} = Astro.props
+---
+
+<header>
+	<div class="left">
+		<Logo />
+	</div>
+	<div class="middle">
+		<p>{titulo}</p>
+	</div>
+	<div class="right">
+		<Nav />
+	</div>
+</header>

@@ -1,0 +1,88 @@
+
+
+/*BURGERS*/
+/*Para Escritorio*/
+@media (min-width:768px){
+	#toggle-dropdown, .hamburger, .hamburger-top, .hamburger-middle, .hamburger-bottom{
+		display:none;
+	}
+	nav{
+		background-color: orange;
+		width: 75px;
+	}
+	
+	.link{
+		color: cyan;
+	}
+}
+/*Para moviles*/
+@media (max-width:768px){
+
+	#container{
+
+		height:40px;
+		width:40px;
+		position:relative;
+	}
+
+	#toggle-dropdown{
+			display: none;
+	}
+
+	.hamburger{
+		background-color:orange;
+		height: inherit;
+		width: inherit;
+		cursor: pointer;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content:space-evenly;
+		align-items: center;
+	}
+
+	.hamburger div{
+		background-color: green;
+		width: inherit;
+		height: calc(40px / 8);
+	}
+
+	#toggle-dropdown:checked + .hamburger .hamburger-top{
+			transform: rotate(-45deg);
+			margin-top: calc(40px * 0.275);
+	}
+
+	#toggle-dropdown:checked + .hamburger .hamburger-middle{
+			transform: rotate(45deg);
+			margin-top: calc(40px * -1 * 0.275);
+	}
+
+	#toggle-dropdown:checked + .hamburger .hamburger-bottom{
+			transform: scale(0);
+	}
+
+	#toggle-dropdown:checked ~ nav{
+		height: auto;
+		padding: 5px 10px;
+	}
+
+	nav{
+		background-color:cyan;
+		height:0px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content:start;
+		gap:7px;
+
+		overflow:hidden;
+
+		position:absolute;
+		right:0;
+	}
+
+	.link{
+	}
+
+}
+
