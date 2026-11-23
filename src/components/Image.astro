@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import Dagon from '../assets/img/dagon-300-405.jpg';
+---
+
+<div>
+    <Image
+        src={Dagon}
+        sizes="(min-width: 62rem) 60rem, 100vw"
+        widths={[400, 800, 1600]}
+        loading="eager"
+        alt="Bosque al amanecer, con montañas de fondo"
+    />
+</div>

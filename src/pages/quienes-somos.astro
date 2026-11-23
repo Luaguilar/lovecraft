@@ -1,10 +1,45 @@
 ---
-import Layout from "../layouts/default.astro"
-import PageTitle from "../components/PageTitle.astro"
+import { Image } from 'astro:assets';
+import Layout from "../layouts/default.astro";
+import PageTitle from "../components/PageTitle.astro";
+import Miskatonic from "../assets/img/miskatonic.jpg";
+
+import "../styles/quienes-somos-page.css"
 ---
 
 <Layout>
-    <PageTitle>¿Quienes Somos?</PageTitle>
+    <section>
+        <PageTitle>Universidad de Miskatonic</PageTitle>
+
+        <div class="about center">
+            <Image
+                src={Miskatonic}
+                width={1000}
+                height={600}
+                alt="Universidad de Miskatonic"
+                class="about-image"
+            />
 
 
+        <h2>¿Quienes Somos?</h2>
+        <p>En la Universidad de Miskatonic siempre nos hemos enorgullecido de ser un faro de excelencia académica en Arkham, pero bajo esa ilustre fachada somos, ante todo, guardianes de verdades que el resto del mundo se niega a aceptar. Quienes conformamos el Departamento de Metafísica y Lenguas Antiguas hemos consagrado nuestras vidas —y en demasiados casos, nuestra propia cordura— a descifrar grimorios prohibidos, traducir oscuros dialectos de civilizaciones prehumanas y catalogar las entidades cósmicas que desafían toda lógica terrestre. No somos simples académicos; somos la delgada línea de eruditos que se atreve a escudriñar el abismo de lo desconocido y documentar sus horrores, asumiendo el terrible peso de esta verdad para que el resto de la humanidad pueda seguir durmiendo en su dichosa e inquebrantable ignorancia</p>
+        
+        <h2>Nuestra Mision</h2>
+        <p>Fundada en Arkham, Massachusetts, la Universidad de Miskatonic ha sido durante mucho tiempo un bastión del conocimiento humano. Sin embargo, nuestra infame "Colección Restringida" custodia saberes que desafían las leyes de la ciencia moderna. El propósito de este portal web es digitalizar y compartir una selección cuidadosa de diarios, reportes policiales y transcripciones de expediciones (clasificados bajo el nombre en clave "Proyecto Lovecraft"). Creemos que la humanidad por fin está lista para conocer la verdad sobre nuestro cosmos.</p>
+
+        <h2>Contacto</h2>
+        <ul>
+            <li>Dirección: 169 W. Armitage Street, Arkham, Mass. 01970</li>
+            <li>
+                Telefono: 
+                <a href="tel:+15550191928" class="btn-contacto">
+                    +1 (555) 019-1928
+                </a>
+            </li>
+            <li>Email: <a href="mailto:archivos@miskatonic.edu" class="btn-contacto">
+                archivos@miskatonic.edu
+            </a> </li>
+        </ul>
+        </div>
+    </section>
 </Layout>

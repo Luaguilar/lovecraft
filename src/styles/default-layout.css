@@ -1,0 +1,28 @@
+html{
+    background-color: #111111;
+    color: #eeeeee;
+    font-size: 1.1rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #aa2200;
+}
+a:link{
+    text-decoration: none;
+    color: green;
+}
+a:hover{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+a:link:hover{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}

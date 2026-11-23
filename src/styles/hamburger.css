@@ -2,7 +2,7 @@
 
 /*BURGERS*/
 /*Para Escritorio*/
-@media (min-width:768px){
+@media (min-width:600px){
 	#toggle-dropdown, .hamburger, .hamburger-top, .hamburger-middle, .hamburger-bottom{
 		display:none;
 	}
@@ -16,7 +16,7 @@
 	}
 }
 /*Para moviles*/
-@media (max-width:768px){
+@media (max-width:600px){
 
 	#container{
 

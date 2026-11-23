@@ -1,0 +1,13 @@
+---
+import "../styles/storyitem.css"
+
+const { url, title, year, description } = Astro.props
+---
+
+<li class="story-item">
+    <a href={"/historias-cortas/" + url}>
+        <span class="title">{title}</span>
+        <span class="year">({year})</span>
+    </a>
+    <p>{description}</p>
+</li>
