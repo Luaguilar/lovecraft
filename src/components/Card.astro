@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+import "../styles/card.css";
+
+const { title, description, imagen, alternativeText } = Astro.props;
+---
+
+<article class="card">
+    <Image
+        src={imagen}
+
+        width={550}
+        height={300}
+
+        loading="eager"
+        alt={alternativeText}
+        class="card-image"
+    />
+    <div class="card-content">
+        <h3>{title}</h3>
+        <p>
+        {description}
+        </p>
+        <a class="btn-read" href="/historias-cortas/dagon">Leer Ahora</a>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
