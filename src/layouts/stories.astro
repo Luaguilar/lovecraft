@@ -11,6 +11,8 @@ const {title} = Astro.props
 <Layout>
     <article class="story">
         <PageTitle>{title}</PageTitle>
-        <slot/>
+        <div class="text">
+            <slot/>
+        </div>
     </article>
 </Layout>
