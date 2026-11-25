@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import "../styles/card.css";
 
-const { title, description, imagen, alternativeText } = Astro.props;
+const { title, description, imagen, alternativeText, href } = Astro.props;
 ---
 
 <article class="card">
@@ -21,7 +21,7 @@ const { title, description, imagen, alternativeText } = Astro.props;
         <p>
         {description}
         </p>
-        <a class="btn-read" href="/historias-cortas/dagon">Leer Ahora</a>
+        <a class="btn-read" href={href}>Leer Ahora</a>
     </div>
 </article>
 
